@@ -1,10 +1,68 @@
 apiVersion: meta.pkg.crossplane.io/v1alpha1
 kind: Configuration
 metadata:
-  name: test-configuration
+  name: platform-ref-multi-k8s
+  annotations:
+    meta.crossplane.io/maintainer: Upbound <support@upbound.io>
+    meta.crossplane.io/source: github.com/upbound/platform-ref-multi-k8s
+    meta.crossplane.io/license: Apache-2.0
+    meta.crossplane.io/description: |
+      This reference platform Configuration for multi-cloud Kubernetes is a starting point to build,
+      run, and operate your own internal cloud platform and offer a self-service console and API to
+      your internal teams.
+
+    meta.crossplane.io/readme: |
+      This reference platform `Configuration` for multi-cloud Kubernetes is a starting point
+      to build, run, and operate your own internal cloud platform and offer a self-service console
+      and API to your internal teams. It provides platform APIs to provision fully configured
+      Kubernetes clusters across multiple cloud providers, such as AWS, GCP, and Azure. Your app
+      teams can use these platform APIs to self-service provision their own Kubernetes clusters on
+      demand when they need them, all while ensuring the configuration and policy guardrails that
+      you specified are also applied.
+
+      These platform APIs are composed using the following Crossplane providers:
+
+      * [Crossplane AWS Provider](https://marketplace.upbound.io/providers/upbound/provider-family-aws)
+      * [Crossplane GCP Provider](https://marketplace.upbound.io/providers/upbound/provider-family-gcp)
+      * [Crossplane Azure Provider](https://marketplace.upbound.io/providers/upbound/provider-family-azure)
+
+      App deployments can securely connect to the infrastructure they need using secrets distributed
+      directly to the app namespace.
+
+      [Quickstart Guide](https://github.com/upbound/platform-ref-multi-k8s/#quick-start)
+
+      [APIs in this
+      Configuration](https://github.com/upbound/platform-ref-multi-k8s/#apis-in-this-configuration)
+
+      To learn more checkout the [GitHub repo](https://github.com/upbound/platform-ref-multi-k8s/)
+      that you can copy and customize to meet the exact needs of your organization!
 spec:
-  dependsOn:
-    - provider: xpkg.upbound.io/crossplane-contrib/provider-aws
-      version: ">=v0.36.0"
   crossplane:
-    version: ">=v1.12.1-0"
+    version: ">=v1.14.1-0"
+  dependsOn:
+    - configuration: xpkg.upbound.io/upbound/configuration-aws-network
+      # renovate: datasource=github-releases depName=upbound/configuration-aws-network
+      version: "v0.10.0"
+    - configuration: xpkg.upbound.io/upbound/configuration-aws-eks
+      # renovate: datasource=github-releases depName=upbound/configuration-aws-eks
+      version: "v0.8.0"
+    - configuration: xpkg.upbound.io/upbound/configuration-azure-network
+      # renovate: datasource=github-releases depName=upbound/configuration-azure-network
+      version: "v0.5.0"
+    - configuration: xpkg.upbound.io/upbound/configuration-azure-aks
+      # renovate: datasource=github-releases depName=upbound/configuration-azure-aks
+      version: "v0.4.0"
+    - configuration: xpkg.upbound.io/upbound/configuration-gcp-network
+      # renovate: datasource=github-releases depName=upbound/configuration-gcp-network
+      version: "v0.2.0"
+    - configuration: xpkg.upbound.io/upbound/configuration-gcp-gke
+      # renovate: datasource=github-releases depName=upbound/configuration-gcp-gke
+      version: "v0.2.0"
+    - function: xpkg.upbound.io/upboundcare/function-conditional-patch-and-transform
+      version: "v0.4.0"
+    - configuration: xpkg.upbound.io/upbound/configuration-observability-oss
+      # renovate: datasource=github-releases depName=upbound/configuration-observability-oss
+      version: "v0.3.0"
+    - configuration: xpkg.upbound.io/upbound/configuration-gitops-flux
+      # renovate: datasource=github-releases depName=upbound/configuration-gitops-flux
+      version: "v0.3.0"
