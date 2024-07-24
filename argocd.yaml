@@ -13,7 +13,7 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/n-g-s/argocd-example.git
+    repoURL: https://github.com/querti/renovate-tests.git
     targetRevision: HEAD
     path: charts
 
