@@ -37,7 +37,7 @@ apps:
     enabled: true
     namespace: monitoring
     chart: open-telemetry/opentelemetry-collector
-    version: 0.6.0
+    version: 0.99.0
     valuesFile: ./otlp-collector/values.yaml
     priority: -75
   strimzi-operator:
