@@ -17,5 +17,5 @@ apps:
     enabled: true
     namespace: monitoring
     chart: grafana/loki
-    version: 2.6.0
+    version: 6.7.3
     priority: -85
