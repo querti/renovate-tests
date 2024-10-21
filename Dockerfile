@@ -1,38 +1,28 @@
-# -- Base images
-# Pinned to specific versions, and updated by Renovate
-FROM node:8.11.3-alpine@sha256:d743b4141b02fcfb8beb68f92b4cd164f60ee457bf2d053f36785bf86de16b0d AS node
-FROM buildkite/puppeteer:1.1.1 AS puppeteer
+FROM registry.access.redhat.com/ubi9/ubi:latest@sha256:66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072 as builder
+RUN dnf -y install golang
 
-# -- Production environment
-FROM    node AS production
-ENV     NODE_ENV=production
-EXPOSE  3000
-WORKDIR /app
-COPY    package.json yarn.lock .yarnclean /app/
-RUN     apk --no-cache --virtual build-dependencies add python make g++ && \
-        yarn install --frozen-lockfile --silent && \
-        apk del build-dependencies
-COPY    . /app
-RUN     yarn run build
-CMD     ["yarn", "run", "start"]
+WORKDIR /go/src/mikefarah/yq
 
-# -- Development
-# We can just override NODE_ENV and re-run install to get the additional dev
-# deps.
-FROM production as development
-ENV  NODE_ENV=development
-RUN  yarn install
+COPY yq/ .
 
-# -- Test
-# Same deps as development
-FROM development as test
+RUN CGO_ENABLED=0 go build -ldflags "-s -w" .
 
-# -- Integration tests
-# Has headless chrome and puppeteer, and adds in Mocha so we can run our tests
-# directly inside it
-FROM puppeteer AS integration-tests
-RUN  npm i -g mocha@5
-ENV  PATH="${PATH}:/node_modules/.bin"
+# RUN ./scripts/test.sh -- this too often times out in the github pipeline.
+RUN ./scripts/acceptance.sh
 
-# -- Default target
-FROM production
+# Rebase on ubi9
+FROM registry.access.redhat.com/ubi9:latest@sha256:d98fdae16212df566150ac975cab860cd8d2cb1b322ed9966d09a13e219112e9
+
+COPY --from=builder /go/src/mikefarah/yq/yq /usr/bin/yq
+
+WORKDIR /workdir
+
+RUN \
+  groupadd -g 1000 yq; \
+  useradd -u 1000 -g yq -s /bin/sh -d /home/yq yq
+
+RUN chown -R yq:yq /workdir
+
+USER yq
+
+ENTRYPOINT ["/usr/bin/yq"]
