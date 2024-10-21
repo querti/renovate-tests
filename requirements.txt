@@ -1,1 +1,1 @@
-pgadmin4==6.10
+pgadmin4==8.12
