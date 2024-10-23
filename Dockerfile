@@ -8,7 +8,7 @@ COPY yq/ .
 
 FROM registry.access.redhat.com/ubi9/ubi@sha256:1ee4d8c50d14d9c9e9229d9a039d793fcbc9aa803806d194c957a397cf1d2b17 as builder3
 
-FROM registry.access.redhat.com/ubi9/ubi-minimal:9.3 as builder4
+FROM registry.access.redhat.com/ubi9/ubi-minimal:9.4-1227.1726694542 as builder4
 
 FROM registry.access.redhat.com/ubi9/ubi:9.4-1194 as builder5
 
