@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi9/ubi:9.3@sha256:66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072 as builder
+FROM registry.access.redhat.com/ubi9/ubi:9.4-1214.1726694543@sha256:b00d5990a00937bd1ef7f44547af6c7fd36e3fd410e2c89b5d2dfc1aff69fe99 as builder
 RUN dnf -y install golang
 
 WORKDIR /go/src/mikefarah/yq
@@ -10,7 +10,7 @@ FROM registry.access.redhat.com/ubi9/ubi@sha256:1ee4d8c50d14d9c9e9229d9a039d793f
 
 FROM registry.access.redhat.com/ubi9/ubi-minimal:9.3 as builder4
 
-FROM registry.access.redhat.com/ubi9/ubi:9.4-1194 as builder5
+FROM registry.access.redhat.com/ubi9/ubi:9.4-1214.1726694543 as builder5
 
 RUN CGO_ENABLED=0 go build -ldflags "-s -w" .
 
