@@ -10,6 +10,8 @@ FROM registry.access.redhat.com/ubi9/ubi@sha256:1ee4d8c50d14d9c9e9229d9a039d793f
 
 FROM registry.access.redhat.com/ubi9/ubi-minimal:9.3 as builder4
 
+FROM registry.access.redhat.com/ubi9/ubi:9.4-1194 as builder5
+
 RUN CGO_ENABLED=0 go build -ldflags "-s -w" .
 
 # RUN ./scripts/test.sh -- this too often times out in the github pipeline.
