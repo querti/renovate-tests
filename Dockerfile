@@ -7,7 +7,7 @@ FROM registry.access.redhat.com/ubi8/ubi-minimal:latest@sha256:2fa47fa9df7b98e27
 COPY yq/ .
 
 FROM registry.access.redhat.com/ubi9/ubi@sha256:bc552efb4966aaa44b02532be3168ac1ff18e2af299d0fe89502a1d9fabafbc5 as builder3
-FROM registry.access.redhat.com/ubi9/ubi-minimal:9.3 as builder4
+FROM registry.access.redhat.com/ubi9/ubi-minimal:9.4 as builder4
 
 
 RUN CGO_ENABLED=0 go build -ldflags "-s -w" .
