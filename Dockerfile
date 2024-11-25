@@ -1,4 +1,4 @@
-FROM registry.redhat.io/container-native-virtualization/virtio-win:v4.12.12@sha256:648195d820acdc93d6ed5bb42893f660aaa3367f1bbd377cf303d4e5b208d82f as builder
+FROM quay.io/lgallovi-test/renovate-test:v1.8.0@sha256:4032c6d5bfd752342c3e631c2f1de93ba6b86c41db6b167b9a35372c139e7706 as builder
 RUN dnf -y install golang
 
 WORKDIR /go/src/mikefarah/yq
