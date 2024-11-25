@@ -5,7 +5,7 @@ WORKDIR /go/src/mikefarah/yq
 
 COPY yq/ .
 
-FROM registry.access.redhat.com/ubi9/ubi-minimal:9.3 as builder4
+FROM registry.access.redhat.com/ubi9/ubi-minimal:9.5-1731604394 as builder4
 
 
 RUN CGO_ENABLED=0 go build -ldflags "-s -w" .
