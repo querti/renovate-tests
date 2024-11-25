@@ -1,4 +1,4 @@
-FROM quay.io/prometheus/node-exporter:v1.8.1@sha256:fa7fa12a57eff607176d5c363d8bb08dfbf636b36ac3cb5613a202f3c61a6631 as builder
+FROM registry.redhat.io/container-native-virtualization/virtio-win:v4.12.12@sha256:648195d820acdc93d6ed5bb42893f660aaa3367f1bbd377cf303d4e5b208d82f as builder
 RUN dnf -y install golang
 
 WORKDIR /go/src/mikefarah/yq
