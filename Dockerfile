@@ -5,7 +5,7 @@ WORKDIR /go/src/mikefarah/yq
 
 COPY yq/ .
 
-FROM registry.access.redhat.com/ubi9/toolbox:9.3-14@sha256:b938f62ba9af5df7a9faa2f72465ecc77d073e01c4360c3e8f633b2c69338c5a as builder4
+FROM registry.access.redhat.com/ubi9/toolbox:9.5-1737550261@sha256:a2dbceeaf99fefca4c9a94e9834e8a6466c037903d49d780536040fd08d16439 as builder4
 
 
 RUN CGO_ENABLED=0 go build -ldflags "-s -w" .
