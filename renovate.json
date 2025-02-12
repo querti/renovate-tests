@@ -5,5 +5,8 @@
       "after 5am"
     ]
   },
-  "containerVulnerabilityAlerts": true
+  "containerVulnerabilityAlerts": true,
+  "vulnerabilityAlerts": {
+    "enabled": true
+  }
 }
