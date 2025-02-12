@@ -1,0 +1,9 @@
+{
+    "dockerfile": {
+    "enabled": true,
+    "schedule": [
+      "before 5am"
+    ]
+  },
+  "containerVulnerabilityAlerts": true
+}
