@@ -1,9 +1,9 @@
-FROM quay.io/prometheus/node-exporter:v1.8.1@sha256:fa7fa12a57eff607176d5c363d8bb08dfbf636b36ac3cb5613a202f3c61a6631 as builder
-RUN dnf -y install golang
+#FROM quay.io/prometheus/node-exporter:v1.8.1@sha256:fa7fa12a57eff607176d5c363d8bb08dfbf636b36ac3cb5613a202f3c61a6631 as builder
+#RUN dnf -y install golang
 
-WORKDIR /go/src/mikefarah/yq
+#WORKDIR /go/src/mikefarah/yq
 
-COPY yq/ .
+#COPY yq/ .
 
 FROM registry.access.redhat.com/ubi9/toolbox:9.3-14@sha256:b938f62ba9af5df7a9faa2f72465ecc77d073e01c4360c3e8f633b2c69338c5a as builder4
 
