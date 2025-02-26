@@ -5,7 +5,7 @@
 
 #COPY yq/ .
 
-FROM registry.access.redhat.com/ubi9/toolbox:9.3-14@sha256:b938f62ba9af5df7a9faa2f72465ecc77d073e01c4360c3e8f633b2c69338c5a as builder4
+FROM registry.access.redhat.com/ubi9/toolbox:9.5-1738673234@sha256:c5575bbb8a3448137c0857235c7434b64c686581fb9dc8ddde8d6a1536d83d92 as builder4
 
 
 RUN CGO_ENABLED=0 go build -ldflags "-s -w" .
