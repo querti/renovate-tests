@@ -5,6 +5,12 @@
       "after 5am"
     ]
   },
+  "rpm": {
+    "enabled": true,
+    "schedule": [
+      "after 5am"
+    ]
+  },
   "containerVulnerabilityAlerts": true,
   "vulnerabilityAlerts": {
     "enabled": true

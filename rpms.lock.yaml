@@ -1,0 +1,15 @@
+---
+lockfileVersion: 1
+lockfileVendor: redhat
+arches:
+- arch: x86_64
+  packages:
+  - url: https://cdn.redhat.com/content/dist/rhel9/9/x86_64/codeready-builder/os/Packages/b/bcc-doc-0.29.0-7.el9_5.noarch.rpm
+    repoid: codeready-builder-for-rhel-9-x86_64-rpms
+    size: 333665
+    checksum: sha256:c8307bda73680a9a32e4b31d264b11740fedf4d775bf65cd03b4a554d52773ce
+    name: bcc-doc
+    evr: 0.29.0-7.el9_5
+    sourcerpm: bcc-0.29.0-7.el9_5.src.rpm
+  source: []
+  module_metadata: []

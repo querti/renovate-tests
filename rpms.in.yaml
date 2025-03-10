@@ -1,0 +1,4 @@
+contentOrigin:
+  repofiles:
+    - ./redhat.repo
+packages: [bcc-doc]
