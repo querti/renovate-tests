@@ -15,8 +15,8 @@ baseurl = https://cdn.redhat.com/content/dist/rhel9/$releasever/x86_64/codeready
 enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslclientkey = $SSL_CLIENT_KEY
-sslclientcert = $SSL_CLIENT_CERT
+sslclientkey = /workspace/shared-data/rpm-certs/key.pem
+sslclientcert = /workspace/shared-data/rpm-certs/cert.pem
 
 [rhel-9-for-x86_64-appstream-rpms]
 name = Red Hat Enterprise Linux 9 for x86_64 - AppStream (RPMs)
@@ -24,8 +24,8 @@ baseurl = https://cdn.redhat.com/content/dist/rhel9/$releasever/x86_64/appstream
 enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslclientkey = $SSL_CLIENT_KEY
-sslclientcert = $SSL_CLIENT_CERT
+sslclientkey = /workspace/shared-data/rpm-certs/key.pem
+sslclientcert = /workspace/shared-data/rpm-certs/cert.pem
 
 [rhel-9-for-x86_64-baseos-rpms]
 name = Red Hat Enterprise Linux 9 for x86_64 - BaseOS (RPMs)
@@ -33,8 +33,8 @@ baseurl = https://cdn.redhat.com/content/dist/rhel9/$releasever/x86_64/baseos/os
 enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslclientkey = $SSL_CLIENT_KEY
-sslclientcert = $SSL_CLIENT_CERT
+sslclientkey = /workspace/shared-data/rpm-certs/key.pem
+sslclientcert = /workspace/shared-data/rpm-certs/cert.pem
 
 
 [codeready-builder-for-rhel-9-x86_64-source-rpms]
@@ -43,8 +43,8 @@ baseurl = https://cdn.redhat.com/content/dist/rhel9/$releasever/x86_64/codeready
 enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslclientkey = $SSL_CLIENT_KEY
-sslclientcert = $SSL_CLIENT_CERT
+sslclientkey = /workspace/shared-data/rpm-certs/key.pem
+sslclientcert = /workspace/shared-data/rpm-certs/cert.pem
 
 [codeready-builder-for-rhel-9-x86_64-rpms]
 name = Red Hat CodeReady Linux Builder for RHEL 9 x86_64 (RPMs)
@@ -52,5 +52,5 @@ baseurl = https://cdn.redhat.com/content/dist/rhel9/$releasever/x86_64/codeready
 enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslclientkey = $SSL_CLIENT_KEY
-sslclientcert = $SSL_CLIENT_CERT
+sslclientkey = /workspace/shared-data/rpm-certs/key.pem
+sslclientcert = /workspace/shared-data/rpm-certs/cert.pem
