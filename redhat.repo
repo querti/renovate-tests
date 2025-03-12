@@ -15,13 +15,8 @@ baseurl = https://cdn.redhat.com/content/dist/rhel9/$releasever/x86_64/codeready
 enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslverify = 1
-sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = $SSL_CLIENT_KEY
 sslclientcert = $SSL_CLIENT_CERT
-sslverifystatus = 1
-metadata_expire = 86400
-enabled_metadata = 0
 
 [rhel-9-for-x86_64-appstream-rpms]
 name = Red Hat Enterprise Linux 9 for x86_64 - AppStream (RPMs)
@@ -29,13 +24,8 @@ baseurl = https://cdn.redhat.com/content/dist/rhel9/$releasever/x86_64/appstream
 enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslverify = 1
-sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = $SSL_CLIENT_KEY
 sslclientcert = $SSL_CLIENT_CERT
-sslverifystatus = 1
-metadata_expire = 86400
-enabled_metadata = 1
 
 [rhel-9-for-x86_64-baseos-rpms]
 name = Red Hat Enterprise Linux 9 for x86_64 - BaseOS (RPMs)
@@ -43,13 +33,9 @@ baseurl = https://cdn.redhat.com/content/dist/rhel9/$releasever/x86_64/baseos/os
 enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslverify = 1
-sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = $SSL_CLIENT_KEY
 sslclientcert = $SSL_CLIENT_CERT
-sslverifystatus = 1
-metadata_expire = 86400
-enabled_metadata = 1
+
 
 [codeready-builder-for-rhel-9-x86_64-source-rpms]
 name = Red Hat CodeReady Linux Builder for RHEL 9 x86_64 (Source RPMs)
@@ -57,13 +43,8 @@ baseurl = https://cdn.redhat.com/content/dist/rhel9/$releasever/x86_64/codeready
 enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslverify = 1
-sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = $SSL_CLIENT_KEY
 sslclientcert = $SSL_CLIENT_CERT
-sslverifystatus = 1
-metadata_expire = 86400
-enabled_metadata = 0
 
 [codeready-builder-for-rhel-9-x86_64-rpms]
 name = Red Hat CodeReady Linux Builder for RHEL 9 x86_64 (RPMs)
@@ -71,10 +52,5 @@ baseurl = https://cdn.redhat.com/content/dist/rhel9/$releasever/x86_64/codeready
 enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslverify = 1
-sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = $SSL_CLIENT_KEY
 sslclientcert = $SSL_CLIENT_CERT
-sslverifystatus = 1
-metadata_expire = 86400
-enabled_metadata = 0
