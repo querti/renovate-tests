@@ -16,8 +16,8 @@ enabled = 1
 gpgcheck = 1
 sslverify = 0
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslclientkey = /vagrant/rpm-test/key.pem
-sslclientcert = /vagrant/rpm-test/cert.pem
+sslclientkey = $SSL_CLIENT_KEY
+sslclientcert = $SSL_CLIENT_CERT
 
 [rhel-9-for-x86_64-appstream-rpms]
 name = Red Hat Enterprise Linux 9 for x86_64 - AppStream (RPMs)
@@ -26,8 +26,8 @@ enabled = 1
 gpgcheck = 1
 sslverify = 0
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslclientkey = /vagrant/rpm-test/key.pem
-sslclientcert = /vagrant/rpm-test/cert.pem
+sslclientkey = $SSL_CLIENT_KEY
+sslclientcert = $SSL_CLIENT_CERT
 
 [rhel-9-for-x86_64-baseos-rpms]
 name = Red Hat Enterprise Linux 9 for x86_64 - BaseOS (RPMs)
@@ -36,8 +36,8 @@ enabled = 1
 gpgcheck = 1
 sslverify = 0
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslclientkey = /vagrant/rpm-test/key.pem
-sslclientcert = /vagrant/rpm-test/cert.pem
+sslclientkey = $SSL_CLIENT_KEY
+sslclientcert = $SSL_CLIENT_CERT
 
 
 [codeready-builder-for-rhel-9-x86_64-source-rpms]
@@ -47,8 +47,8 @@ enabled = 1
 gpgcheck = 1
 sslverify = 0
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslclientkey = /vagrant/rpm-test/key.pem
-sslclientcert = /vagrant/rpm-test/cert.pem
+sslclientkey = $SSL_CLIENT_KEY
+sslclientcert = $SSL_CLIENT_CERT
 
 
 [codeready-builder-for-rhel-9-x86_64-rpms]
@@ -58,6 +58,6 @@ enabled = 1
 gpgcheck = 1
 sslverify = 0
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslclientkey = /vagrant/rpm-test/key.pem
-sslclientcert = /vagrant/rpm-test/cert.pem
+sslclientkey = $SSL_CLIENT_KEY
+sslclientcert = $SSL_CLIENT_CERT
 
