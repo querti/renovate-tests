@@ -4,5 +4,11 @@
     "schedule": [
       "after 5am"
     ]
+  },
+   "gomod": {
+    "enabled": true,
+    "schedule": [
+      "after 5am"
+    ]
   }
 }
