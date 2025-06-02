@@ -1,4 +1,4 @@
 contentOrigin:
   repofiles:
-    - ./redhat.repo
-packages: [bcc-doc]
+    - ./ubi.repo
+packages: [cargo]
