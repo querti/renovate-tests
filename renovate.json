@@ -1,11 +1,5 @@
 {
-    "dockerfile": {
-    "enabled": true,
-    "schedule": [
-      "after 5am"
-    ]
-  },
-   "gomod": {
+    "rpm": {
     "enabled": true,
     "schedule": [
       "after 5am"
