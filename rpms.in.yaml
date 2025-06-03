@@ -1,4 +1,15 @@
 contentOrigin:
-  repofiles:
-    - ./ubi.repo
-packages: [cargo]
+  repos:
+    - repoid: fedora
+      baseurl: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/$basearch/os/
+    - repoid: fedora-sources
+      baseurl: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/source/tree/
+
+packages:
+  - vim-enhanced
+
+arches:
+  - x86_64
+
+context:
+  image: registry.fedoraproject.org/fedora:rawhide
