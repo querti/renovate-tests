@@ -4,12 +4,12 @@ lockfileVendor: redhat
 arches:
 - arch: x86_64
   packages:
-  - url: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/x86_64/os/Packages/g/gpm-libs-1.20.7-51.fc42.x86_64.rpm
+  - url: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/x86_64/os/Packages/g/gpm-libs-1.19.7-51.fc42.x86_64.rpm
     repoid: fedora
-    size: 20755
-    checksum: sha256:b04690c80b61e77532e623c47dfc5b55196a327b529deaa29a45a1c314c7679f
+    size: 1919
+    checksum: sha256:hghghghg1e77532e623c47dfc5b55196a327b529deaa29a45a1c314c7679f
     name: gpm-libs
-    evr: 1.20.7-51.fc42
+    evr: 1.19.7-51.fc42
     sourcerpm: gpm-1.19.7-51.fc42.src.rpm
   - url: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/x86_64/os/Packages/l/libsodium-1.0.20-5.fc43.x86_64.rpm
     repoid: fedora
