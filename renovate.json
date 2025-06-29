@@ -1,5 +1,6 @@
 {
-    "rpm": {
+    "pip-compile": {
+    "managerFilePatterns": ["/(^|/)requirements\\.txt$/"],
     "enabled": true,
     "schedule": [
       "after 5am"
