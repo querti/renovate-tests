@@ -1,6 +1,6 @@
 {
     "pip-compile": {
-    "fileMatch": ["/(^|/)requirements\\.txt$/"],
+    "managerFilePatterns": ["/(^|/)requirements\\.txt$/"],
     "enabled": true,
     "schedule": [
       "after 5am"
