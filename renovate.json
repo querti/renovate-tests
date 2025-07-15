@@ -9,5 +9,9 @@
   "lockFileMaintenance": {
     "enabled": false,
     "schedule": ["after 5am"]
-  }
+  },
+  "baseBranches": [
+        "master",
+        "develop"
+    ]
 }
