@@ -1,13 +1,13 @@
 {
     "pip-compile": {
     "managerFilePatterns": ["/(^|/)requirements\\.txt$/"],
-    "enabled": true,
+    "enabled": false,
     "schedule": [
       "after 5am"
     ]
   },
   "lockFileMaintenance": {
-    "enabled": true,
+    "enabled": false,
     "schedule": ["after 5am"]
   }
 }
