@@ -5,9 +5,5 @@
     "schedule": [
       "after 5am"
     ]
-  },
-  "lockFileMaintenance": {
-    "enabled": false,
-    "schedule": ["after 5am"]
   }
 }
