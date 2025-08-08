@@ -14,7 +14,7 @@ arches:
   - url: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/x86_64/os/Packages/l/libsodium-1.0.20-6.fc43.x86_64.rpm
     repoid: fedora
     size: 179911
-    checksum: sha256:1b4f1ebabf91188d911f421f0c1ac4c0300054db3fd3328838d69b9a4c1357da
+    checksum: sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaa
     name: libsodium
     evr: 1.0.20-6.fc43
     sourcerpm: libsodium-1.0.20-6.fc43.src.rpm
