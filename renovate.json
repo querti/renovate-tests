@@ -1,5 +1,5 @@
 {
-    "pip-compile": {
+    "dockerfile": {
     "enabled": false,
     "schedule": [
       "after 5am"
