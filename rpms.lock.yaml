@@ -60,12 +60,12 @@ arches:
     checksum: sha256:952b9c6596563562fbeed579399b779d7735c62adc29be1c49c2f96c8b0de6aa
     name: gpm
     evr: 1.20.7-52.fc43
-  - url: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/source/tree/Packages/l/libsodium-1.0.16-6.fc43.src.rpm
+  - url: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/source/tree/Packages/l/libsodium-1.0.18-6.fc43.src.rpm
     repoid: fedora-sources
     size: 1960690
     checksum: sha256:67f38c7a4d75703412a10d69dd7c439806463773a75eb3abce775b39d8f8f7c3
     name: libsodium
-    evr: 1.0.16-6.fc43
+    evr: 1.0.18-6.fc43
   - url: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/source/tree/Packages/v/vim-9.1.1552-2.fc43.src.rpm
     repoid: fedora-sources
     size: 15524779
