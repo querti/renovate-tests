@@ -18,13 +18,13 @@ arches:
     name: libsodium
     evr: 1.0.20-6.fc43
     sourcerpm: libsodium-1.0.20-6.fc43.src.rpm
-  - url: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/x86_64/os/Packages/v/vim-common-7.1.1623-1.fc43.x86_64.rpm
+  - url: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/x86_64/os/Packages/v/vim-common-9.1.1623-1.fc43.x86_64.rpm
     repoid: fedora
     size: 8503413
     checksum: sha256:ebd0689087f03866f41467d73fea894f07817abbf054a0dc6ddabf04742fde49
     name: vim-common
-    evr: 7.1.1623-1.fc43
-    sourcerpm: vim-7.1.1623-1.fc43.src.rpm
+    evr: 2:9.1.1623-1.fc43
+    sourcerpm: vim-9.1.1623-1.fc43.src.rpm
   - url: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/x86_64/os/Packages/v/vim-enhanced-9.1.1623-1.fc43.x86_64.rpm
     repoid: fedora
     size: 2066426
