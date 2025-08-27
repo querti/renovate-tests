@@ -16,7 +16,7 @@ arches:
     size: 179911
     checksum: sha256:6e7e49221c92b85db321397743a479f68821f6f6954021ccc6b24ee0a654f2b6
     name: libsodium
-    evr: 1.0.16-6.fc43
+    evr: 1.0.20-6.fc43
     sourcerpm: libsodium-1.0.20-6.fc43.src.rpm
   - url: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/x86_64/os/Packages/v/vim-common-9.1.1623-1.fc43.x86_64.rpm
     repoid: fedora
@@ -65,7 +65,7 @@ arches:
     size: 1960690
     checksum: sha256:8fc385739ab8b5105bf9d9f7250c701f39fa074b5e17f36b1ca5ab328a097256
     name: libsodium
-    evr: 1.0.16-6.fc43
+    evr: 1.0.20-6.fc43
   - url: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/source/tree/Packages/v/vim-9.1.1623-1.fc43.src.rpm
     repoid: fedora-sources
     size: 15653667
