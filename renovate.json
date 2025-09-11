@@ -4,5 +4,6 @@
     "schedule": [
       "after 5am"
     ]
-  }
+  },
+  "labels": ["bug"]
 }
