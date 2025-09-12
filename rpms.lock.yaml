@@ -6,8 +6,8 @@ arches:
   packages:
   - url: https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/compose/Everything/x86_64/os/Packages/g/gpm-libs-1.20.7-51.fc42.x86_64.rpm
     repoid: fedora
-    size: 111111
-    checksum: sha256:abcabcabcd
+    size: 20755
+    checksum: sha256:b04690c80b61e77532e623c47dfc5b55196a327b529deaa29a45a1c314c7679f
     name: gpm-libs
     evr: 1.20.7-51.fc42
     sourcerpm: gpm-1.20.7-51.fc42.src.rpm
