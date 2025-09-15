@@ -4,16 +4,5 @@
     "schedule": [
       "after 5am"
     ]
-  },
-    "aaabcbcbcbcb": {
-    "enabled": true,
-    "schedule": [
-      "after 5am"
-    ],
-    "lockFileMaintenance": {
-      "enabled": true,
-      "schedule": ["after 5am"]
-    }
-  },
-  "labels": ["bug"]
+  }
 }
