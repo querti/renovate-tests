@@ -555,7 +555,7 @@ spec:
             name: workdir
         steps:
         - computeResources: {}
-          image: registry.access.redhat.com/ubi9/ubi-minimal:9.6-1749489516
+          image: registry.access.redhat.com/ubi9/ubi-minimal:9.6-1755695350
           name: task-run
           script: |
             #!/bin/bash
