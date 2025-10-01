@@ -15,7 +15,7 @@ require (
 	github.com/onsi/gomega v1.38.2
 	github.com/tektoncd/pipeline v0.65.2
 	github.com/xanzy/go-gitlab v0.115.0
-	golang.org/x/oauth2 v0.23.0
+	golang.org/x/oauth2 v0.31.0
 	k8s.io/api v0.34.1
 	k8s.io/apimachinery v0.34.1
 	k8s.io/client-go v0.34.1
