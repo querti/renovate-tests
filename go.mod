@@ -10,7 +10,7 @@ require (
 	github.com/google/go-cmp v0.7.0
 	github.com/google/go-github/v75 v75.0.0
 	github.com/hashicorp/go-multierror v1.1.1
-	github.com/konflux-ci/application-api v0.0.0-20240527211352-be061932d497
+	github.com/konflux-ci/application-api 5a9670bf7679
 	github.com/onsi/ginkgo/v2 v2.25.3
 	github.com/onsi/gomega v1.38.2
 	github.com/tektoncd/pipeline v0.65.2
