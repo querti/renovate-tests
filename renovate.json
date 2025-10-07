@@ -1,5 +1,5 @@
 {
-  "enabledManagers": ["rpm-lockfile"],
+  "enabledManagers": ["gradle"],
     "gomod": {
     "enabled": false,
     "schedule": [
@@ -15,5 +15,11 @@
       "enabled": true,
       "schedule": ["after 5am"]
     }
+  },
+  "gradle": {
+    "enabled": true,
+    "schedule": [
+      "after 5am"
+    ]
   }
 }

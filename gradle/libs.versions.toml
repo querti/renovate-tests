@@ -1,0 +1,41 @@
+[versions]
+# Core dependencies with older versions for Renovate to update
+jackson = "2.12.7"
+slf4j = "1.7.36"
+logback = "1.2.12"
+commons-lang3 = "3.12.0"
+junit = "4.13.2"
+mockito = "4.6.1"
+assertj = "3.23.1"
+
+# Plugin versions
+kotlin = "1.8.22"
+spring-boot = "2.7.18"
+junit-jupiter = "5.9.3"
+
+[libraries]
+# Jackson libraries
+jackson-databind = { group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref = "jackson" }
+jackson-core = { group = "com.fasterxml.jackson.core", name = "jackson-core", version.ref = "jackson" }
+
+# Logging libraries
+slf4j-api = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j" }
+logback-classic = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+
+# Utility libraries
+commons-lang3 = { group = "org.apache.commons", name = "commons-lang3", version.ref = "commons-lang3" }
+
+# Test libraries
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+assertj-core = { group = "org.assertj", name = "assertj-core", version.ref = "assertj" }
+
+[bundles]
+logging = ["slf4j-api", "logback-classic"]
+jackson = ["jackson-core", "jackson-databind"]
+testing = ["junit", "mockito-core", "assertj-core"]
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+junit-jupiter = { id = "org.junit.jupiter", version.ref = "junit-jupiter" }

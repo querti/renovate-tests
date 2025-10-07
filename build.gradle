@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.ben-manes.versions' version '0.47.0'
+}
+
+group = 'com.example'
+version = '1.0.0'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Using version catalog (libs.versions.toml)
+    implementation libs.jackson.databind
+    implementation libs.bundles.logging
+    implementation libs.commons.lang3
+    
+    // Test dependencies from version catalog
+    testImplementation libs.junit
+    testImplementation libs.bundles.testing
+}
+
+application {
+    mainClass = 'com.example.Main'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
