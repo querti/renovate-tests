@@ -1,6 +1,6 @@
 [versions]
 # Core dependencies with older versions for Renovate to update
-jackson = "2.12.7"
+jackson = "2.20.0"
 slf4j = "1.7.36"
 logback = "1.2.12"
 commons-lang3 = "3.12.0"
