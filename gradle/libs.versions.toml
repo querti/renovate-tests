@@ -2,7 +2,7 @@
 # Core dependencies with older versions for Renovate to update
 jackson = "2.12.7"
 slf4j = "1.7.36"
-logback = "1.2.12"
+logback = "1.5.19"
 commons-lang3 = "3.12.0"
 junit = "4.13.2"
 mockito = "4.6.1"
