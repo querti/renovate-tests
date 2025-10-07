@@ -1,8 +1,19 @@
 {
-    "dockerfile": {
+  "enabledManagers": ["rpm-lockfile"],
+    "gomod": {
     "enabled": false,
     "schedule": [
       "after 5am"
     ]
+  },
+    "rpm-lockfile": {
+    "enabled": true,
+    "schedule": [
+      "after 5am"
+    ],
+    "lockFileMaintenance": {
+      "enabled": true,
+      "schedule": ["after 5am"]
+    }
   }
 }
